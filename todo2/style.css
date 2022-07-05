@@ -1,0 +1,37 @@
+body{
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+form {
+    border-radius: 10px;
+    width: 500px;
+    padding: 10px;
+    background-color: blue;
+    text-align: center;
+    color: white;
+}
+.list{
+    text-align: left;
+    cursor: pointer;
+    list-style:none;
+}
+li{
+    margin: 10px;
+    font-style: italic;
+}
+li.checked{
+    text-decoration: line-through;
+}
+li.checked:before{
+    content: "✓ ";
+    color: rgb(0, 240, 0);
+}
+li.checked:hover:after{
+    content: " (supprimer)";
+}
+li:hover:after{
+    content: " (valider)";
+    font-size: 0.8em;
+}

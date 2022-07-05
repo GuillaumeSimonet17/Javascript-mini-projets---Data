@@ -1,0 +1,56 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(29, 29, 29);
+}
+
+.container {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    width: 450px;
+    border-radius: 3px;
+    border: 1px solid black;
+    padding: 20px;
+    background-color: rgb(223, 223, 223);
+}
+h2{
+    margin-top: 10px;
+}
+#input {
+    border-radius: 3px;
+    border: 1px solid grey;
+    background-color: rgb(212, 212, 212);
+    
+}
+
+#list{
+    text-align: left;
+    margin-top: 10px;
+    list-style-type: square;
+    list-style:none;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+li{
+    margin: 10px;
+}
+
+li:hover:after {
+    content: "  (terminé)";
+    color: rgb(139, 0, 0);
+    font-style: italic;
+    font-size: 0.8em;
+}
+
+li.checked::before{
+    content: "✓ ";
+    color: rgb(0, 87, 0);
+}
+li.checked{
+    color: rgb(0, 87, 0);
+}
+li.checked:hover:after {
+    content: "  (supprimer)";
+}
